@@ -1,0 +1,11 @@
+.GrandPa,
+.GrandPa div {
+    border: 3px solid orangered;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+.flex {
+    display: flex;
+
+}
