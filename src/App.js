@@ -6,8 +6,6 @@ import Orders from '../src/Components/Orders/Orders';
 import About from '../src/Components/About/About';
 import GrandPa from './Components/GrandPa/GrandPa';
 
-
-
 function App() {
   const router = createBrowserRouter([
     {
@@ -16,12 +14,12 @@ function App() {
       children: [
         {
           path: '/',
-          loader:()=>fetch('tshirts.json'),
+          loader: () => fetch('tshirts.json'),
           element: <Home></Home>
         },
         {
           path: 'home',
-          loader:()=>fetch('tshirts.json'),
+          loader: () => fetch('tshirts.json'),
           element: <Home></Home>
         },
         {
@@ -44,8 +42,6 @@ function App() {
   return (
     <div className="App">
       <RouterProvider router={router}></RouterProvider>
-
-
     </div>
   );
 }
